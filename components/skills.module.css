@@ -1,0 +1,24 @@
+.carousel {
+  height: 100%;
+  margin: 3rem auto;
+  padding: 0 25rem;
+}
+
+.skills {
+  text-align: center;
+  width: 58%;
+  margin: 2rem auto;
+}
+
+.skills h1 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.skills p {
+  font-size: 1.18rem;
+  font-weight: 100;
+  line-height: 2rem;
+  padding: 0 2rem;
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,164 @@
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 46rem;
+}
+.card__side {
+  height: 46rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+.card__sidefront {
+  background-color: #fff;
+}
+.card__sideback {
+  transform: rotateY(180deg);
+}
+
+.card__sideback1 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#2c3e50),
+    to(#9f686c)
+  );
+  background-image: linear-gradient(to right bottom, #2c3e50, #9f686c);
+}
+.card:hover .card__sidefront {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.card:hover .card__sideback {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+.card__picture {
+  background-size: cover;
+  height: 25rem;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.card__picture img {
+  height: 25rem;
+}
+
+.card h4 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 18rem;
+  right: 1rem;
+  width: 75%;
+  background-image: linear-gradient(to right bottom, #2c3e50, #9f686c);
+  opacity: 0.87;
+  border-radius: 1rem;
+}
+.card span {
+  padding: 1rem 1.5rem;
+  box-decoration-break: clone;
+}
+.card__details {
+  padding: 1rem 2rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #2c3e5060;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__githubbox {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 8rem;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.card__githubbox a {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.card__githubicon {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+.card__livedemo {
+  font-size: 6rem;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .card__sideback {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .card:hover .card__sidefront {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  .card__details {
+    padding: 1rem 3rem;
+  }
+  .card__cta {
+    position: relative;
+    top: 0%;
+    left: 0;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+  .card__githubbox {
+    margin-bottom: 3rem;
+  }
+  .card__githubicon {
+    font-size: 4rem;
+  }
+}
