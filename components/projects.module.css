@@ -13,8 +13,8 @@
 .cards {
   grid-column-start: center-start;
   grid-column-end: center-end;
-  margin: 5rem 8rem;
+  margin: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 5rem;
+  grid-gap: 2.5rem;
 }

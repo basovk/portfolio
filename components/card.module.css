@@ -2,7 +2,7 @@
   perspective: 150rem;
   position: relative;
   height: 46rem;
-  max-width: 31rem;
+  max-width: 26rem;
 }
 .card__side {
   height: 46rem;
@@ -75,7 +75,7 @@
   box-decoration-break: clone;
 }
 .card__details {
-  padding: 1rem 2rem;
+  padding: 3.5rem 2rem;
 }
 .card__details ul {
   list-style: none;

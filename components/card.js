@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { FaGithub } from 'react-icons/fa'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 // CSS
 import classes from './card.module.css'
@@ -11,7 +11,7 @@ const Card = ({ title, technology, imagePath, viewCode, viewDemo }) => {
     <div className={classes.card}>
       <div className={`${classes.card__side} ${classes.card__sidefront}`}>
         <div className={`${classes.card__picture} ${classes.card__picture1}`}>
-          <Image width={500} height={500} alt={title} src={imagePath} />
+          <img alt={title} src={imagePath} />
         </div>
         <h4>
           <span>{title}</span>
