@@ -2,6 +2,7 @@
   perspective: 150rem;
   position: relative;
   height: 46rem;
+  max-width: 31rem;
 }
 .card__side {
   height: 46rem;
@@ -43,7 +44,7 @@
 }
 .card__picture {
   background-size: cover;
-  height: 25rem;
+  height: 23rem;
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
@@ -51,7 +52,8 @@
 }
 
 .card__picture img {
-  height: 25rem;
+  height: 100%;
+  width: 100%;
 }
 
 .card h4 {
