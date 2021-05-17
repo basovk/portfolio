@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 
 import Header from '../components/header'
@@ -8,7 +9,7 @@ import Footer from '../components/footer'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Home</title>
         <link rel='icon' href='/images/logo.png' />
@@ -19,6 +20,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <Footer />
-    </div>
+    </>
   )
 }
